@@ -1,0 +1,385 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+:root{
+	--losAngeles:#4d4d4d;
+	--title: #414f6b;
+	--lightBlue: #61739a;
+	--copyRight: #63769d;
+	
+
+}
+
+
+.sky{
+	background-image: url('./src/estamainMontain.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:100vh;
+	width: 100vw;
+	z-index:2;
+	position: absolute;
+}
+
+.text{
+	z-index: 1;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+}
+.text h1{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3rem;
+	font-weight: 900;
+	line-height: 0.8;
+}
+.text h1:first-child{
+	color: var(--losAngeles);
+	
+}
+.text h1:last-child{
+	letter-spacing: 0.04em;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: linear-gradient(180deg, #414f6b 1%, #2b3446 82%);
+}
+.montains{
+	background-image: url('./src/mainbackground.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 105vh;
+	width: 100vw;
+	z-index: 0;
+	position: absolute;
+}
+.navStyle{
+	
+	position: absolute;
+	z-index: 3;
+	display: flex;
+	gap: 10px;
+	left: 50%;
+	transform: translate(-50%, 10%);
+	
+}
+
+.navLinks{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 145px;
+	font-family: 'Oswald', sans-serif;
+	font-style: italic;
+	
+	
+}
+.navLinks a{
+	color: var(--title);
+	border-bottom: 0.2px solid  #414f6b;
+}
+.topNavLinks a{
+	color: white;
+	border-bottom: 1px solid white;
+	
+}
+.space{
+	height: 100vh;
+	
+}
+.stikyNav{
+    margin-top: -10px;
+    position: sticky;
+    top: 0;
+    height: 75px;
+   
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.stikyNavContainer{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+}
+.stikyNavText{
+	font-family: 'Bebas Neue', cursive;
+	font-weight: 900;
+	font-size: 1.2rem;
+	line-height: 0.9;
+}
+.stikyNavText h2:first-child{
+	color: var(--losAngeles);
+
+	
+}
+.stikyNavText h2:last-child{
+	letter-spacing: 0.1em;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: linear-gradient(180deg, #414f6b 1%, #2b3446 82%);
+}
+.history{
+	height: 100vh;
+	background-image: url('./src/history.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Bebas Neue', cursive;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+.historyText{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container{
+	height: 110px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #414f6b9f;
+	gap: 7px;
+}
+.splide__slide img{
+	width: 65px;
+	height: 60px;
+}
+
+.bigNumber{
+	font-size: 5rem;
+	color: #414f6b50;
+	padding-right: 135px;
+}
+.climbNumber{
+	padding-right: 110px;
+}
+.smallText{
+	color: var(--title);
+	margin-top: -70px;
+	font-size: 2rem;
+	margin-bottom: 15px;
+}
+.textP{
+	font-family: 'Lato', sans-serif;
+	margin: 0 20px;
+}
+.climb{
+	height: 100vh;
+}
+.climbTitle{
+	text-align: center;
+	font-family: 'Bebas Neue', cursive;
+	height: 165px;
+}
+.climbButtons{
+	background-color: var(--title);
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	margin: 15px 0 0;
+}
+.climbButtons button{
+	border: none;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.2rem;
+	letter-spacing: 0.07rem; 
+	font-weight: bold;
+	background-color: var(--title);
+	color: #b0b4be;
+}
+.climbButtonActive {
+	padding: 5px 10px 5px 10px;
+	background-color: #b0b4be !important;
+	color: var(--title)!important;
+}
+.climb{
+	background-image: url('./src/montain1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	
+}
+.climbInfo{
+	width: 225px;
+	height: 150px;
+	background-color: rgba(255, 255, 255, 0.462);
+	display: flex;
+	margin-top: 100px;
+	flex-direction: column;
+	padding: 10px 15px;
+	
+}
+.bottonInfo{
+	width: 250px;
+	height: 120px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+
+	font-family: 'Lato', sans-serif;
+	
+}
+.scheduleDates{
+	width: 330px;
+}
+.topInfo{
+	font-family: 'Bebas Neue', cursive;
+	color: var(--title);
+	font-size: 2rem;
+	font-weight: bold;
+
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--title);
+	height: 100px;
+    margin-top: -100px;
+}
+#footerLogo{
+	background: #6c7a99; 
+  mix-blend-mode: multiply;
+  border-radius: 100%;
+}
+.footerText h2{
+	font-family: 'Bebas Neue', cursive;
+	font-weight: 900;
+	font-size: 1.2rem;
+	line-height: 0.9;
+	color:#6c7a99;
+}
+.footerDiv{
+	margin: 15px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+.copyRight h3{
+	font-family: 'Lato', sans-serif;
+	color:#6c7a99;
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-style: italic;
+	
+
+}
+
+@media (min-width:900px) {
+	.navStyle{
+		justify-content: space-evenly;
+	width: 100vw;
+	}
+	.text h1{
+		font-weight: 500;
+		font-size: 9rem;
+	}
+	.text {
+		top: 48%;
+		left: 47%;
+	}
+	.container{
+		height: 150px;
+		gap: 10px;
+	}
+	
+	.sky {
+		width: 99vw;
+}
+	.textP {
+		width: 700px;
+		text-align: justify;
+}
+	.bigNumber {
+		font-size: 12rem;
+		padding-right: 650px;
+}	
+	.smallText {
+		font-size: 4rem;
+		margin-top: -160px;
+		
+		margin-bottom: 45px;
+		
+	}
+	.splide__slide img{
+		width: 170px;
+		height: 100px;
+	}
+	.dates{
+		display: flex;
+	
+	}
+	.carrouselImg img{
+		width: 150px;
+    height: 105px;
+	}
+	.historySmallText{
+		padding-right: 350px;
+	}
+	.climbTitle{
+		display: flex;
+   		 align-items: center;
+    	justify-content: center;
+	}#climbNumber{
+		font-size: 13rem;
+   	 padding-right: 48px !important;
+	}
+
+	#climbSmallText{
+		font-size: 4rem;
+		margin-top: -160px;
+		margin-bottom: 45px;
+		padding-left: 210px !important;
+	}
+	.footerText h2:last-child{
+
+		letter-spacing: 0.13rem;
+	}
+}
